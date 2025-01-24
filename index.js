@@ -48,7 +48,7 @@ const percentuais = Object.entries(faturamentoEstados).map(([estado, valor]) => 
     return { estado, percentual: ((valor / faturamentoTotal) * 100).toFixed(2) };
 });
 
-percentuais.forEach(({ estado, percentual }) => console.log(${estado}: ${percentual}%));
+percentuais.forEach(({ estado, percentual }) => console.log(`${estado}: ${percentual}%`));
 
 
 function inverterString(string) {
